@@ -21,38 +21,33 @@
             <div class="desktop-menu">
                 <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. -->
                     <ul class="nav nav-pills">
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
+                        <li class="nav-link"><a href="index.html" target="_self">Inicio</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./filmografia/live-action.html">Live-action</a></li>
+                              <li><a class="dropdown-item" href="./filmografia/animacion.html">Animación</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
+                        <li class="nav-item"><a class="nav-link" href="estilos-y-tematicas/index.html" target="_self">Estilo y Temáticas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
+                        <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
+                      </ul>
                 </nav>
             </div>
             <div class="mobile-menu">
-                <!-- Top Navigation Menu -->
                 <div class="topnav">
-                    <a href="#home" class="active">inicio</a>
-                    <!-- Navigation links (hidden by default) -->
-                    <div id="myLinks">
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#about">About</a>
-                    </div>
-                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                  <a href="#home" class="active">Inicio</a>
+                  <div id="myLinks">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                  </div>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
                 </div>
-            </div>
+              </div>
         </header>
         <section>
             <h2>Bocetos de Burton</h2>
@@ -72,6 +67,7 @@
             </main>
         </section>
      </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
      <script src="js/script-galeria-fotos.js"></script>
     </body>
