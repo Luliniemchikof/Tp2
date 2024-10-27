@@ -1,6 +1,7 @@
 let menuDesktop = document.querySelector('.desktop-menu');
 let menuMobile = document.querySelector('.mobile-menu');
 
+
 function checkScreenSize() {
   if (window.matchMedia("(max-width: 768px)").matches) {
     // Mostrar el menú móvil

@@ -16,38 +16,38 @@
     <body>
      <div id="contenedor">
         <header>
-            <h1 class="titulo">TIM BURTON, EL GENIO DE LO EXTRAÑO</h1>
-            <img class="banner" src="./img/img0.jpg" alt="dibujos por Tim Burton">
-            <div class="desktop-menu">
-                <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. -->
-                    <ul class="nav nav-pills">
-                        <li class="nav-link"><a href="index.html" target="_self">Inicio</a></li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./filmografia/live-action.html">Live-action</a></li>
-                              <li><a class="dropdown-item" href="./filmografia/animacion.html">Animación</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="estilos-y-tematicas/index.html" target="_self">Estilo y Temáticas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
-                        <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
-                      </ul>
-                </nav>
-            </div>
-            <div class="mobile-menu">
-                <div class="topnav">
-                  <a href="#home" class="active">Inicio</a>
-                  <div id="myLinks">
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                  </div>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
+          <h1 class="titulo">TIM BURTON, EL GENIO DE LO EXTRAÑO</h1>
+          <img class="banner" src="./img/img0.jpg" alt="dibujos por Tim Burton">
+          <div class="desktop-menu">
+            <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. -->
+                <ul class="nav nav-pills">
+                  <li class="nav-link"><a href="index.html" target="_self">Inicio</a></li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./filmografia/live-action.html">Live-action</a></li>
+                      <li><a class="dropdown-item" href="./filmografia/animacion.html">Animación</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="estilos-y-tematicas/index.html" target="_self">Estilo y Temáticas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
+                  <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="mobile-menu">
+            <nav>
+              <div class="topnav">
+                <a href="#home" class="active">Inicio</a>
+                <div id="myLinks">
+                  <a href="#news">News</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#about">About</a>
                 </div>
-              </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+          </div>
         </header>
         <section>
             <h2>Bocetos de Burton</h2>
@@ -69,6 +69,6 @@
      </div>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-     <script src="js/script-galeria-fotos.js"></script>
+     <script src="js/script-compartido.js"></script>
     </body>
 </html>
