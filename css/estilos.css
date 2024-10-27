@@ -18,7 +18,7 @@ body {
 }
 
 
-.titulo {
+.titulos {
     color: #ffffff;
     background-color: #4a235a ;
     text-align: center;
@@ -26,6 +26,8 @@ body {
     padding: 0.5rem;
     border-radius: 0.4em;
 }
+
+
 
 .banner {
     width: 100%;
@@ -47,32 +49,37 @@ footer {
     border-radius: 0.625rem;
     text-align: center;
 }
-.subtitulos{
-    text-align: center;
-}
+
+
 
 .imgIndex, .imgTimCaratula,.imgTimJoven,.BurtonHoy{
   float: inline-start;
   margin: 1em;
   padding: .5em;
 }
+
 .imgIndex{
   width: 47%;
 }
+
 .imgTimCaratula,.imgTimNiño,.BurtonHoy{
   width: 30%;
 }
+
 .imgTimJoven{
   width: 40%;
 }
+
 iframe{
   width: 55%;
 }
+
 .imgTimNiño,iframe{
   float: inline-end;
   margin: 1em;
   padding: .5em;
 }
+
 .textoBurton, .sectionLink{
     margin: 1em;
     padding: 0;
