@@ -7,7 +7,7 @@ function checkScreenSize() {
     // Mostrar el menú móvil
     menuDesktop.style.display = 'none';
     menuMobile.style.display = 'block';
-    document.getElementById("myLinks").style.display = 'none';  // Oculto el menú móvil inicialmente
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
   } else {
     // Mostrar el menú de escritorio
     menuDesktop.style.display = 'block';
@@ -21,3 +21,11 @@ checkScreenSize();
 // Escuchar el cambio de tamaño de la ventana
 window.addEventListener('resize', checkScreenSize);
 
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+  x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
