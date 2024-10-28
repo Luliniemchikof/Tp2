@@ -15,7 +15,7 @@ body {
   color: #ffffff;
 }
 .tituloHeader{
-  background-color: #4a235a ;
+  background-color: #4a235a;
   font-size: 2.5em;
 }
 .titulos,.tituloHeader {
@@ -47,11 +47,20 @@ header {
 footer {
   width: 90%;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #4a235a;
   padding: 0 0.625rem;
   margin: 20px auto;
   border-radius: 0.625rem;
   text-align: center;
+}
+
+.fondo{
+    width: 95%;
+    padding: 2em;
+    background: #e3ae2b;
+    border-radius: 0.6em;
+    margin: 20px;
+
 }
 
 
