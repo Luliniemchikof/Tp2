@@ -1,83 +1,103 @@
-
-
 body {
-    box-sizing: border-box;
-    margin: 0;
-    background-color: black;
-    background-image: url('../img/img9.jpg');
-    font-family: "Playfair Display";
-    display: flex;
-    justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: black;
+  background-image: url('../img/img9.jpg');
+  font-family: "Playfair Display";
+  display: flex;
+  justify-content: center;
 }
 
 #contenedor {
-    width: 100%;
-    max-width: 960px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #ffffff;
+  width: 100%;
+  max-width: 960px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+}
+.tituloHeader{
+  background-color: #4a235a ;
+  font-size: 2.5em;
+}
+.titulos,.tituloHeader {
+  color: #ffffff;
+  text-align: center;
+  margin: .5em;
+  padding: 0.5em;
+  border-radius: 0.4em;
 }
 
-
-.titulo {
-    color: #ffffff;
-    background-color: #4a235a ;
-    text-align: center;
-    margin: 20px auto;
-    padding: 0.5rem;
-    border-radius: 0.4em;
+.titulos{
+  font-size: 1.5em;
 }
 
+h2{
+  background-color: #4a235a;
+}
 .banner {
-    width: 100%;
-    border-radius: 0.8em;
+  width: 100%;
+  border-radius: 0.8em;
 }
 
 header {
-    width: 95%;
-    margin: auto;
+  width: 95%;
+  margin: auto;
 }
 
 
 footer {
-    width: 90%;
-    color: #ffffff;
-    background-color: #000000;
-    padding: 0 0.625rem;
-    margin: 20px auto;
-    border-radius: 0.625rem;
-    text-align: center;
+  width: 90%;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0 0.625rem;
+  margin: 20px auto;
+  border-radius: 0.625rem;
+  text-align: center;
 }
-.subtitulos{
-    text-align: center;
-}
+
+
 
 .imgIndex, .imgTimCaratula,.imgTimJoven,.BurtonHoy{
   float: inline-start;
   margin: 1em;
   padding: .5em;
 }
+
 .imgIndex{
   width: 47%;
 }
+
 .imgTimCaratula,.imgTimNiño,.BurtonHoy{
   width: 30%;
 }
+
 .imgTimJoven{
   width: 40%;
 }
+
 iframe{
   width: 55%;
 }
+
 .imgTimNiño,iframe{
   float: inline-end;
   margin: 1em;
   padding: .5em;
 }
+
 .textoBurton, .sectionLink{
-    margin: 1em;
-    padding: 0;
-    text-indent: .5em;
-    text-align: justify;
+  margin: 1em;
+  padding: 0;
+  text-indent: .5em;
+  text-align: justify;
+}
+.sectionLink{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.sectionLink div{
+  display: flex;
+  flex-direction: column;
 }
 
 /*Estilos del nav hamburger de la galería de fotos VERSION 1*/
@@ -137,9 +157,16 @@ iframe{
   background-color: yellowgreen;
   color: #000000;
 }
-.imgLink{
+.imgLink1,.imgLink2{
   width: 30%;
   float: inline-start;
   margin: 1em;
   padding: .5em;
+}
+
+@media (max-width:480px){
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
