@@ -17,11 +17,68 @@
             <h1 class="tituloHeader">Tim Burton, El genio de lo extraño.</h1>
             <img class="banner" src="img/img0.jpg" alt="dibujos por Tim Burton">
 
+            <div class="desktop-menu"> <!--Nav de la versión desktop-->
+                  <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
+                    <ul class="nav nav-pills">
+                      <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+                      <li class="nav-link"><a href="../biografia.html" target="_self">Biografía</a></li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
+                          <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
+                          <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./estilos-y-tematicas/">Sobre estilos y temáticas</a></li>
+                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                        </ul>
+                      <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
+                      <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
+                      <li class="nav-item"><a class="nav-link" href="galeria-fotos.html" target="_self">Galería de Fotos</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="mobile-menu">
+                  <nav>
+                    <div class="topnav">
+                      <a href="index.html" target="_self">Inicio</a>
+                      <div id="myLinks">
+                        <ul class="nav nav-pills">
+                      <li class="nav-link"><a href="index.html" target="_self">Inicio</a></li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./filmografia/index.html">Sobre filmografía</a></li>
+                          <li><a class="dropdown-item" href="./filmografia/live-action.html">Live-action</a></li>
+                          <li><a class="dropdown-item" href="./filmografia/animacion.html">Animación</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./estilos-y-tematicas/">Sobre estilos y temáticas</a></li>
+                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                        </ul>
+                      <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
+                      <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
+                      <li class="nav-item"><a class="nav-link" href="galeria-fotos.html" target="_self">Galería de Fotos</a></li>
+                    </ul>
+                      </div>
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+
           </header>
 
            <section>
         
              <h2 class="titulos">¡Ponernos en contacto con vos!</h2>
+              <p class="textoCentrado">Te invitamos a completar un formulario que nos ayudará a conocerte mejor y saber más sobre tu vínculo con este maestro de lo peculiar y lo fantástico, y así poder ofrecerte una experiencia personalizada, llena de contenido exclusivo y de detalles profundos de su vida y obra. </p>
          </section>
 
 
@@ -61,14 +118,32 @@
     </div>
   </div>
   <div class="col-md-3">
-    <label for="validationCustom04" class="form-label">Estado</label>
+    <label for="validationCustom04" class="form-label">Película favorita</label>
     <select class="form-select" id="validationCustom04" required>
       <option selected disabled value="">Elegir...</option>
-      <option>Solterx</option>
-      <option>Casadx</option>
+      <option>Vincent (1982)</option>
+      <option>Frankenweenie (1984)</option>
+      <option>La Gran Aventura de Pee-Wee (1985)</option>
+      <option>Beetlejuice (1988)</option>
+      <option>Batman (1989)</option>
+      <option>Eduardo Manostijeras (1990)</option>
+      <option>Batman Returns (1992)</option>
+      <option>Pesadilla antes de Navidad (1993)</option>
+      <option>Ed Wood (1994)</option>
+      <option>Batman Forever (1995)</option>
+      <option>James y el Melocotón Gigante (1996)</option>
+      <option>Mars Attacks! (1996)</option>
+      <option>13. Sleepy Hollow (1999)</option>
+      <option>El Planeta de los Simios (2001)</option>
+      <option>Big Fish (2003)</option>
+      <option>Charlie y la Fábrica de Chocolate (2005)</option>
+      <option>La Novia Cadáver (2005)</option>
+      <option>Alicia en el País de las Maravillas (2010)</option>
+      <option>Abraham Lincoln: Cazador de Vampiros (2012)</option>
+
     </select>
     <div class="invalid-feedback">
-      Seleccione un estado válido.
+      Seleccione una película válida.
     </div>
   </div>
   <div class="col-md-3">
@@ -102,5 +177,7 @@
 
   </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+      <script src="js/script-formulario.js"></script>
+      <script src="js/script-compartido.js"></script>
     </body>
 </html>

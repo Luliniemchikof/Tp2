@@ -87,6 +87,19 @@ iframe{
   width: 55%;
 }
 
+.video-container{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.object-fit-contain{
+  responsive: true,
+  
+}
+
+
 .imgTimNiño,iframe{
   float: inline-end;
   margin: 1em;
@@ -113,6 +126,14 @@ iframe{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.textoCentrado {
+  margin: 1em;
+  padding: 0;
+  text-indent: .5em;
+  text-align: center;
+
 }
 
 /*Estilos del nav hamburger de la galería de fotos VERSION 1*/
