@@ -1,47 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre nosotrxs</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotrxs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet href=hamburger-menu.css>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
 
-    <body>
+  <body>
     <div id="contenedor">
       <header>
-        <h1 class="tituloHeader">Tim Burton, El genio de lo extraño.</h1>
-            <img class="banner" src="img/img0.jpg" alt="dibujos por Tim Burton">
-
+        <h1 class="tituloHeader">TIM BURTON, EL GENIO DE LO EXTRAÑO</h1>
+        <img class="banner" src="img/img0.jpg" alt="dibujos por Tim Burton">
+        <div class="desktop-menu"> <!--Nav de la versión desktop-->
+          <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
+            <ul class="nav nav-pills">
+              <li class="nav-link"><a href="./index.html" target="_self">Inicio</a></li>
+              <li class="nav-link"><a href="./biografia.html" target="_self">Biografía</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./filmografia/index.html">Sobre filmografía</a></li>
+                  <li><a class="dropdown-item" href="./filmografia/animacion.html">Animación</a></li>
+                  <li><a class="dropdown-item" href="./filmografia/live-action.html">Live-action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
+                  <li><a class="dropdown-item" href="./estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                  <li><a class="dropdown-item" href="./estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                </ul>
+              <li class="nav-item"><a class="nav-link" href="./colaboraciones.html" target="_self">Colaboraciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="./otras-obras.html" target="_self">Otras Obras</a></li>
+              <li class="nav-item"><a class="nav-link" href="./galeria-fotos.html" target="_self">Galería de Fotos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-menu"> <!--Nav de la versión mobile-->
+          <nav>
+            <div class="topnav">
+              <a href="./sobre-nosotras.html" target="_self">Nosotras</a>
+              <div id="myLinks">
+                <ul class="nav nav-pills">
+              <li class="nav-link"><a href="./index.html" target="_self">Inicio</a></li>
+              <li class="nav-item"><a href="./biografia.html" target="_self">Biografía</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./filmografia/index.html">Sobre filmografía</a></li>
+                  <li><a class="dropdown-item" href="./filmografia/animacion.html">Animación</a></li>
+                  <li><a class="dropdown-item" href="./filmografia/live-action.html">Live-action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
+                  <li><a class="dropdown-item" href="./estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                  <li><a class="dropdown-item" href="./estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
+              <li class="nav-item"><a class="nav-link" href="galeria-fotos.html" target="_self">Galería de Fotos</a></li>
+            </ul>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
       </header>
-        <section>
-            
-             <h2 class="titulos">Conociéndonos un poco más</h2>
-        
-             <img class="imgIndex" src="img/cesia.jpg" alt="Cesia Damaris Perez">
-                    <p class="textoBurton">Mi nombre es Cesia Damaris Pérez, tengo 33 años y nací el 26 de abril de 1991 en Capital Federal. Actualmente vivo en el Gran Buenos Aires, donde comparto mi hogar con dos compañeros felinos que hacen mis días mucho más especiales.</p>
-                    <p class="textoBurton">Mi recorrido académico ha sido amplio y diverso, siempre guiado por mi curiosidad y pasión por distintas disciplinas. Inicialmente, estudié Trabajo Social en la Universidad de Luján, donde adquirí una fuerte sensibilidad por las problemáticas sociales y el bienestar comunitario. Con el tiempo, mi interés por el arte y la creatividad me llevó a la ex IUNA (Instituto Universitario Nacional del Arte), donde me formé en Artes Visuales, explorando diferentes técnicas y enfoques dentro del mundo del arte.</p>
-                    <p class="textoBurton">Actualmente, sigo expandiendo mi horizonte artístico en el área de Artes Multimediales, un campo que me permite fusionar diversas disciplinas y medios, desde lo visual hasta lo digital. Me encanta experimentar con nuevas formas de expresión y siempre estoy buscando maneras de integrar la tecnología y el arte para crear piezas que generen impacto.</p>
-                    
-                 </section>
+      <section>
+        <h2 class="titulos">Conociéndonos un poco más</h2>
+        <img class="imgIndex" src="img/cesia.jpg" alt="Cesia Damaris Perez">
+        <p class="textoBurton">Mi nombre es Cesia Damaris Pérez, tengo 33 años y nací el 26 de abril de 1991 en Capital Federal. Actualmente vivo en el Gran Buenos Aires, donde comparto mi hogar con dos compañeros felinos que hacen mis días mucho más especiales.</p>
+        <p class="textoBurton">Mi recorrido académico ha sido amplio y diverso, siempre guiado por mi curiosidad y pasión por distintas disciplinas. Inicialmente, estudié Trabajo Social en la Universidad de Luján, donde adquirí una fuerte sensibilidad por las problemáticas sociales y el bienestar comunitario. Con el tiempo, mi interés por el arte y la creatividad me llevó a la ex IUNA (Instituto Universitario Nacional del Arte), donde me formé en Artes Visuales, explorando diferentes técnicas y enfoques dentro del mundo del arte.</p>
+        <p class="textoBurton">Actualmente, sigo expandiendo mi horizonte artístico en el área de Artes Multimediales, un campo que me permite fusionar diversas disciplinas y medios, desde lo visual hasta lo digital. Me encanta experimentar con nuevas formas de expresión y siempre estoy buscando maneras de integrar la tecnología y el arte para crear piezas que generen impacto.</p>
+      </section>
 
-        <section>
-        
-             <img class="imgIndex" src="img/luciana.jpeg" alt="Luciana Niemchikof ">
-                    <p class="textoBurton">Mi nombre es </p>
-                    <p class="textoBurton"></p>
-                    <p class="textoBurton"></p>
-                    
-                 </section>
+      <section>
+        <img class="imgIndex" src="img/luciana.jpeg" alt="Luciana Niemchikof ">
+        <p class="textoBurton">Mi nombre es Luciana Niemchikof, tengo 23 años y nací el 28 de Octubre de 2001 en Morón, partido del Gallo, pero soy de Ituzaingó. Soy vegana y mi comida re favorita de todo el planeta son los Spaghettis, pero mi comida para situaciones especiales son los Ñoquis. Además, comería papas fritas todos los días si no fuera muy perjudicial.</p>
+        <p class="textoBurton">Estudio Letras en la UBA (Universidad de Buenos Aires) y Artes Multimediales en la UNA (Universidad Nacional de las Artes). Mi escritora argentina favorita es Liliana Bodoc y mi libro favorito en todo el mundo es Orgullo y Prejuicio de Jane Austen. Encuentro totalmente apasionante la literatura argentina e inglesa del siglo xix y la temática de las consecuencias de las guerras del siglo xx, pero últimamente los eslavos se han ganado mi corazón. Siento un profundo amor por el teórico Roland Barthes y recomiendo todo el tiempo <em>El placer del Texto</em>. Hay pocas cosas que me obsesionan, que no sean literatura: The Beatles, NANA, Evangelion, mi humilde camarita roja de dos pixeles y medio y mis entrenamientos de Taekwondo. Mi pintora favorita es Remedios Varo.</p>
+        <p class="textoBurton"> Mi interés estético actual se encuentra en el ultra maximalismo de la mano del punk y las subculturas. Tengo varios alter egos para distribuir todas las cosas que me gustan.</p>
+      </section>
 
-          <footer>
+      <footer>
         <p><em>Para recibir más información escribinos a:<a href="mailto:burtoniana_1998@yahoo.com"> burtoniana_1998@yahoo.com</a></em></p>
-           </footer>
-  </div>
-     
- </body>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="js/script-compartido.js"></script>
+  </body>
 </html>

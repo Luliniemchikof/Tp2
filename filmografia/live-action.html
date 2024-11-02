@@ -1,84 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Filmografía: películas live-action</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-        
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmografía: Películas live-action</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet href=hamburger-menu.css>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+  </head>
     
-    <body>
-        <div id="contenedor">
-            <header>
-                <h1 class="tituloHeader">TIM BURTON, EL GENIO DE LO EXTRAÑO</h1>
-                <img class="banner" src="../img/img0.jpg" alt="dibujos por Tim Burton">
-                <div class="desktop-menu"> <!--Nav de la versión desktop-->
-                  <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
-                    <ul class="nav nav-pills">
-                      <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
-                      <li class="nav-link"><a href="../biografia.html" target="_self">Biografía</a></li>
-                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
-                          <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
-                          <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./estilos-y-tematicas/">Sobre estilos y temáticas</a></li>
-                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tecnica.html">Técnica</a></li>
-                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tematicas.html">Temáticas</a></li>
-                        </ul>
-                      <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
-                      <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
-                      <li class="nav-item"><a class="nav-link" href="galeria-fotos.html" target="_self">Galería de Fotos</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="mobile-menu">
-                  <nav>
-                    <div class="topnav">
-                      <a href="index.html" target="_self">Inicio</a>
-                      <div id="myLinks">
-                        <ul class="nav nav-pills">
-                      <li class="nav-link"><a href="index.html" target="_self">Inicio</a></li>
-                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./filmografia/index.html">Sobre filmografía</a></li>
-                          <li><a class="dropdown-item" href="./filmografia/live-action.html">Live-action</a></li>
-                          <li><a class="dropdown-item" href="./filmografia/animacion.html">Animación</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./estilos-y-tematicas/">Sobre estilos y temáticas</a></li>
-                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tecnica.html">Técnica</a></li>
-                          <li><a class="dropdown-item" href="./estilos-y-tematicas/tematicas.html">Temáticas</a></li>
-                        </ul>
-                      <li class="nav-item"><a class="nav-link" href="colaboraciones.html" target="_self">Colaboraciones</a></li>
-                      <li class="nav-item"><a class="nav-link" href="otras-obras.html" target="_self">Otras Obras</a></li>
-                      <li class="nav-item"><a class="nav-link" href="galeria-fotos.html" target="_self">Galería de Fotos</a></li>
-                    </ul>
-                      </div>
-                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                      </a>
-                    </div>
-                  </nav>
-                </div>
-              </header>
-
-        
-            <footer>
-                <p><em>Para recibir más información escribinos a:<a href="mailto:burtoniana_1998@yahoo.com"> burtoniana_1998@yahoo.com</a></em></p>
-            </footer>
+  <body>
+    <div id="contenedor">
+      <header>
+        <h1 class="tituloHeader">TIM BURTON, EL GENIO DE LO EXTRAÑO</h1>
+        <img class="banner" src="../img/img0.jpg" alt="dibujos por Tim Burton">
+        <div class="desktop-menu"> <!--Nav de la versión desktop-->
+          <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
+            <ul class="nav nav-pills">
+              <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+              <li class="nav-link"><a href="../biografia.html" target="_self">Biografía</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
+                  <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
+                  <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
+                  <li><a class="dropdown-item" href="../estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                  <li><a class="dropdown-item" href="../estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                </ul>
+              <li class="nav-item"><a class="nav-link" href="../colaboraciones.html" target="_self">Colaboraciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="../otras-obras.html" target="_self">Otras Obras</a></li>
+              <li class="nav-item"><a class="nav-link" href="../galeria-fotos.html" target="_self">Galería de Fotos</a></li>
+            </ul>
+          </nav>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
-        <script src="../js/script-compartido.js"></script>
-    </body>
+        <div class="mobile-menu"><!--Nav de la versión mobile-->
+          <nav>
+            <div class="topnav">
+              <a href="live-action.html" target="_self">Live-action</a>
+              <div id="myLinks">
+                <ul class="nav nav-pills">
+                    <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+                    <li class="nav-link"><a href="../biografia.html" target="_self">Biografía</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
+                        <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
+                        <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
+                        <li><a class="dropdown-item" href="../estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                        <li><a class="dropdown-item" href="../estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                      </ul>
+                    <li class="nav-item"><a class="nav-link" href="../colaboraciones.html" target="_self">Colaboraciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../otras-obras.html" target="_self">Otras Obras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../galeria-fotos.html" target="_self">Galería de Fotos</a></li>
+                  </ul>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="textoSection">
+        <h2 class="titulos">EL LIVE ACTION BURTONIANO</h2>
+        <main>
+          <h3 class="titulos">Director y productor</h3>
+          <img class="setBeetlejuice" src="img/tim-on-set.jpeg" alt="Tim en el set de Beetlejuice">
+          <p class="textoBurton">Burton no tardaría en introducirse dentro del gran engranaje de Hollywood, pero desde su propia manera de hacer cine. Una de sus colaboraciones fue junto a la productora y actriz Shelley Duvall, que le ofreció trabajar en un capítulo de su serie televisiva que consistía en una versión de <em>Aladino y la lámpara maravillosa</em>.</p>
+          <p class="textoBurton">Gracias el éxito y reconocimiento que obtuvo en círculos profesionales por sus dos cortometrajes y de su paso por televisión, llamó la atención de Warner Bros, que se fijó en él para hacer su propia versión del superhéroe Batman, pero se canceló por el momento. La productora supo ver su talento y decidió contar con él para dirigir <em>La gran aventura de Pee-Wee</em> (1985), que fue su primer largometraje dentro de su carrera como director.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dEPB4wflmZo?si=oSBqcg8HhB6MGgzF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p class="textoBurton">La película supuso todo un éxito que dio lugar a una segunda colaboración con la Warner: <em>Beetlejuice</em> (1988). Esta extraña y delirante historia de fantasmas sorprendió a todos,llegando a ser una de las más taquilleras del año. El proyecto se podría definir como una comedia y no tiene una trama evidente, pero está cargada de humor negro con decorados surreales y alocados y efectos especiales increíbles para la época. En definitiva, una serie de elementos que dejan entrever los cimientos de lo que es Tim Burton a día de hoy y que veremos a lo largo de su cine. Beetlejuice obtuvo un éxito sorprendente y la crítica también fue positiva. Todo esto corroboró lo que pensaba Burton: el público estaba receptivo antes las películas que se salieran de lo convencional que producía Hollywood.</p>
+          <p class="textoBurton">La que sin duda le lanzó hacia la cima del éxito y le convirtió en uno de los directores más respetados del momento fue <em>Batman</em> (1989), una adaptación al cine del conocido héroe.</p>
+          <h3 class="titulos">Años 90'</h3>
+          <img class="setEdward" src="img/set-edward.jpeg" alt="Tim en el set de Edward Scissorhands">
+          <p class="textoBurton">Burton era la persona más solicitada del momento y no se sentía cómodo en su nuevo papel de director estrella. Se planteaba la posibilidad de tomarse un descanso y no parecía especialmente interesado en afrontar un nuevo proyecto, y menos la secuela de Batman que le proponía la Warner.</p>
+          <p class="textoBurton">Si el cineasta se embarcaba en una nueva aventura, sería algo más personal y autobiográfico. Por ello decidió retomar un antiguo proyecto muy íntimo, <em>Edward Scissorhands</em> (1990),un maravilloso cuento de hadas al estilo posmoderno que encierra muchos recuerdos y sentimientos de su juventud.</p>
+
+          <p class="textoBurton">Luego, a Burton le ofrecieron producir una película que se trataba de una biografía del director de cine Edward D. Wood Jr., a quien la crítica definía como<em> el peor director del mundo</em>. Hablamos de<em> Ed Wood</em> (1994), una historia biográfica con un toque de terror que trata sobre la pasión por el cine, donde se reconstruye el Hollywood de los años cincuenta: por primera vez Burton nos muestra una versión de la realidad geográfica e histórica. Esta película fue rodada en blanco y negro, que ayudó a determinar la estética y la atmósfera del film, causó problemas con los productores, ya que, en Estados Unidos el blanco y negro se reserva sólo a producciones con gran vocación artística.</p>
+          <img class="imgOnSet" src="img/burton-mars-attacks.png" alt="Burton en el set de Mars Attacks!">
+          <p class="textoBurton">En 1996 llegó el primer gran fracaso de Tim Burton en el cine comercial: la parodia de ciencia ficción<em> Mars Attacks!</em>. Para esta película se inspiró en una colección de cromos con el mismo nombre, que se trataba de una serie de estampas grotescas y muy coloridas, características que se reflejarían en el filme. Se convirtió en una sátira que mostraba muchas de las influencias de Burton: los filmes de Ray Harryhausen y las películas de ciencia ficción de los años 50 y 60, entre otras.</p>
+          
+          <p class="textoBurton">Tras ello se produjo un parón en su carrera y aunque tuvo varios proyectos en manos durante este tiempo, Tim Burton no resurgió hasta la película<em> Sleepy Hollow </em>(1999). Producida esta vez por la Paramount, Burton enmendó el fracaso que tuvo con la película anterior y consiguió que esta fuera una de las películas del año.</p>
+
+          <h3 class="titulos">Los 2000'</h3>
+          <img class="imgSetPlaneta" src="img/set-planet-of-apes.jpg" alt="Tim en el set de Planeta de los Simios">
+          <p class="textoBurton">Las productoras se lanzaron con nuevos proyectos, como hizo la Fox con una nueva versión de un clásico del cine de ciencia ficción. Así inauguraba Burton una nueva década, con<em> El planeta de los Simios </em>(2001).</p>
+          <p class="textoBurton">Es su obra menos burtoniana porque carece de los rasgos propios como personajes melancólicos y tristes, la utilización del expresionismo alemán o esa mezcla de terror y comedia que caracterizan sus películas. Fue muy criticado por ello, pero esta película dejó constancia que Burton es igual de competente trabajando por encargo y otros géneros lejanos a sus trabajos habituales.</p>
+          <p class="textoBurton">En<em> Big Fish</em> (2003) sucede todo lo contrario. La implicación personal del director es mucho mayor que en la anterior película y muestra una gran madurez respecto a sus anteriores films. Es una película muy cercana a la sensibilidad de Burton y trata temas como el amor o el perdón.</p>
+          <p class="textoBurton">Otra de sus obras más recordadas y aplaudidas es<em> Charlie y la Fábrica de Chocolate</em>(2005). Está basada en el famosísimo relato de Roald Dahl y ya existía una película en los 70, pero Burton no se limita a recrear lo que ya habíamos visto años atrás, sino que consigue crear un universo único que una vez más contiene todos los rasgos de su cine.</p>
+          <img class="imgSetSombras" src="img/set-dark-shadows.jpg" alt="Tim en el set de Sombras Tenebrosas">
+          <p class="textoBurton">Después vino<em> Sweeney Todd</em> (2008), cuyo guion cruel e irónico está basado en el famoso musical londinense de mismo nombre que supieron trasladar perfectamente al cine. Burton nos ofrece un musical sangriento que se transforma en una historia de amor, drama y venganza que, en manos de otro director, podría haber sido un auténtico desastre. Luego, Disney empezó a plantearse la opción de realizar remakes live-action de sus clásicos animados, es decir, adaptaciones con actores reales de películas o series que originalmente eran de animación. El primer fue una versión del cuento de Lewis Carroll,<em> Alicia en el País de las Maravillas </em>, que vio la luz en 2010.</p>
+          <p class="textoBurton">La siguiente sea quizás una de las películas de su filmografía que más polémicas ha traído. Hablamos de Sombras tenebrosas (2012), una adaptación de la popular serie estadounidense de mismo nombre de gran éxito en los años 60 y 70. Esta comedia con tintes góticos y humor negro es, probablemente, la más disparatada y decadente que nos ha dado el director. Hace un intento por volver a sus orígenes y reunir todos los elementos característicos de sus primeros trabajos, pero empleó una mezcla de tonos y géneros que se le fue de las manos, como si fuera la primera vez que utilizaba ese recurso. El público le acusaba de haber cambiado. Las críticas fueron negativas y en general, no gustó a la audiencia, por lo que no consiguió triunfar en esta ocasión.</p>
+          <img class="imgSetAlicia" src="img/set-alice-in-wonderland.jpg" alt="Tim en el set de Alicia en el País de las Maravillas">
+          <p class="textoBurton">Su siguiente proyecto estaba basado en la historia real de la pintora Margaret Keane,<em> Big Eyes</em> (2015), película con una identificación emocional que la convierte en una pequeña gran joya de su filmografía. Hace una crítica de cómo los artistas son capaces de perder su esencia a cambio de una marca y dinero y cómo pueden llegar a perder por completo su voz. En 2016 estrenó<em> El hogar de Miss Peregrine para Niños Peculiares</em>, basada en el aclamado best-seller de Ransom Riggs que se inspiró en su propia colección de fotografías vintage para crear la historia que, como hemos visto en su biografía, él también recopilaba por lo que no es de extrañar que les llamase la atención y las utilizara como inspiración. Los personajes e imágenes son llevados a la vida en esta mágica adaptación de Burton para Fox.</p>
+          <p class="textoBurton">En 2019 nos trajo otro live-action,<em> Dumbo</em>, una adaptación de la película animada de 1941 de Walt Disney del mismo nombre. Esta película lleva su firma, con elementos propios de su particular estilo, pero no consigue ser el Burton original y fascinante de sus películas anteriores.</p>
+        </section>
+    
+        <footer>
+            <p><em>Para recibir más información escribinos a:<a href="mailto:burtoniana_1998@yahoo.com"> burtoniana_1998@yahoo.com</a></em></p>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/script-compartido.js"></script>
+  </body>
 </html>

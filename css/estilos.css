@@ -55,13 +55,18 @@ footer {
 }
 
 .fondo {
-    width: 95%;
-    padding: 2em;
-    background: #e3ae2b;
-    border-radius: .6em;
-    margin: .5em;
+  width: 95%;
+  padding: .6em;
+  background: #e3ae2b;
+  border-radius: .6em;
+  margin: 0;
+}
 
-
+.formulario{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .list-group {
@@ -72,23 +77,28 @@ footer {
     float: inline-start;
 }
 
-
-
-.imgIndex, .imgTimCaratula,.imgTimJoven,.BurtonHoy{
+/*Estilos para todas las imágenes*/
+.imgIndex, .imgTimCaratula,.imgTimJoven,.BurtonHoy,.setBeetlejuice,.setEdward,.imgSetPlaneta,.imgSetAlicia{
   float: inline-start;
   margin: 1em;
   padding: .5em;
 }
 
-.imgIndex{
+.imgTimNino,iframe,.imgOnSet,.imgSetSombras{
+  float: inline-end;
+  margin: 1em;
+  padding: .5em;
+}
+
+.imgIndex,.imgOnSet{
   width: 47%;
 }
 
-.imgTimCaratula,.imgTimNiño,.BurtonHoy{
+.imgTimCaratula,.imgTimNino,.BurtonHoy,.setEdward{
   width: 30%;
 }
 
-.imgTimJoven{
+.imgTimJoven,.setBeetlejuice,.imgSetSombras,.imgSetPlaneta,.imgSetAlicia{
   width: 40%;
 }
 
@@ -100,29 +110,21 @@ iframe{
 /*estilos para el responsive del video en pagina filmografia*/
 
 .video-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
 }
 
 
 .responsive-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.imgTimNiño,iframe{
-  float: inline-end;
-  margin: 1em;
-  padding: .5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .textoBurton, .sectionLink{
@@ -155,30 +157,32 @@ iframe{
 
 }
 
-/*Estilos del nav hamburger de la galería de fotos VERSION 1*/
-
-/* Style the navigation menu */
+/*Estilos del nav hamburger*/
+/* Estilo del menu de navegación */
 .topnav {
   overflow: hidden;
   background-color: #333;
   position: relative;
+  flex-wrap: wrap;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
+/* Esconder los links dentro del menu de navegación (excepto el logo/home) */
 .topnav #myLinks {
   display: none;
 }
 
-/* Style navigation menu links */
+/* Estilos de los links del menu */
 .topnav a {
   color: white;
   padding: .2em .4em;
   text-decoration: none;
-  font-size: 1.2em;
   display: block;
 }
+.dropdown-item{
+  font-size: 1.2em;
+}
 
-/* Style the hamburger menu */
+/* Estilos del menú hamburguesa */
 .topnav a.icon {
   background: black;
   display: block;
@@ -187,18 +191,22 @@ iframe{
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
+/* Agregar el hover gris */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Style the active link (or home/logo) */
+/* Estilo de active (o home/logo) */
 .active {
   background-color: #4a235a;
   color: white;
 }
-/*Fin de estilos del nav hamburger de la galería de fotos*/
+.dropdown-menu li a{
+  color: #000000;
+  font-size: .8em;
+}
+/*Fin de estilos del nav hamburger*/
 
 
 .sectionLink p span{
@@ -215,9 +223,26 @@ iframe{
   padding: .5em;
 }
 
-@media (max-width:480px){
+.swiffy-slider ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiffy-slider ul li img{
+  width: 60%;
+}
+
+@media (max-width:768px){
   .nav {
     display: flex;
     flex-direction: column;
+  }
+  .topnav{
+    font-size: .8em;
+  }
+  
+  img{
+    float: none;
+    display: block;
   }
 }
