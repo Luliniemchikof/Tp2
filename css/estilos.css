@@ -53,6 +53,15 @@ footer {
   border-radius: .625rem;
   text-align: center;
 }
+footer a{
+  color: #ddd;
+}
+footer a:hover{
+  color: yellowgreen;
+}
+footer a:active{
+  color: pink;
+}
 
 .fondo {
   width: 95%;
@@ -221,7 +230,9 @@ iframe{
   font-size: .8em;
 }
 /*Fin de estilos del nav hamburger*/
-
+li a{
+  text-decoration: none;
+}
 
 .sectionLink p span{
   background-color: #4a235a;
