@@ -43,6 +43,13 @@ header {
   margin: auto;
 }
 
+section.cuadro {
+    margin: auto;
+    padding: 2em;
+    text-align: justify;
+    
+}
+
 
 footer {
   width: 90%;
@@ -82,6 +89,14 @@ img{
   margin: 1em;
   padding: .5em;
 }
+
+.imgcentrada img{
+      
+  max-width: 95%;
+  border-radius: 0.9em;
+
+}
+
 .imgIndex, .imgTimCaratula,.imgTimJoven,.BurtonHoy,.setBeetlejuice,.setEdward,.imgSetPlaneta,.imgSetAlicia,.imgColaboraciones1{
   float: inline-start;
 }
@@ -101,22 +116,43 @@ img{
 .imgTimJoven,.setBeetlejuice,.imgSetSombras,.imgSetPlaneta,.imgSetAlicia{
   width: 40%;
 }
+
 .actoresColaboraciones{
   width: 10%;
 }
+
 .imgColaboraciones1,.imgColaboraciones2{
   width: 10%;
   margin: .8em;
   padding: 0;
 }
+
 .imgColaboraciones1:hover{
   border: .1em solid yellowgreen;
 }
+
 .imgColaboraciones2:hover{
   border: .1em solid yellowgreen;
 }
+
 iframe{
   width: 55%;
+}
+
+.contenedor-iframe {
+ position: relative;
+ width: 100%;
+ padding-top: 56.25%;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
