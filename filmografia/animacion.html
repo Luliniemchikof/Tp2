@@ -1,105 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilos y temáticas: inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel=stylesheet href=hamburger-menu.css>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-  </head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Filmografía: Películas animadas</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel=stylesheet href=hamburger-menu.css>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+        
+    </head>
     
-  <body>
-    <div id="contenedor">
-      <header>
-        <h1 class="tituloHeader">TIM BURTON, EL GENIO DE LO EXTRAÑO</h1>
-        <img class="banner" src="../img/img0.jpg" alt="dibujos por Tim Burton">
-        <div class="desktop-menu"> <!--Nav de la versión desktop-->
-          <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
-            <ul class="nav nav-pills">
-              <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
-              <li class="nav-link"><a href="../biografia.html" target="_self">Biografía</a></li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
-                  <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
-                  <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
-                  <li><a class="dropdown-item" href="../estilos-y-tematicas/tecnica.html">Técnica</a></li>
-                  <li><a class="dropdown-item" href="../estilos-y-tematicas/tematicas.html">Temáticas</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="../colaboraciones.html" target="_self">Colaboraciones</a></li>
-              <li class="nav-item"><a class="nav-link" href="../otras-obras.html" target="_self">Otras Obras</a></li>
-              <li class="nav-item"><a class="nav-link" href="../galeria-fotos.html" target="_self">Galería de Fotos</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="mobile-menu"><!--Nav de la versión mobile-->
-          <nav>
-            <div class="topnav">
-              <a href="live-action.html" target="_self">Live-action</a>
-              <div id="myLinks">
-                <ul class="nav nav-pills">
-                  <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
-                  <li class="nav-item"><a href="../biografia.html" target="_self">Biografía</a></li>
-                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
-                      <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
-                      <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
+    <body>
+      <div id="contenedor">
+        <header>
+          <h1 class="tituloHeader">TIM BURTON, EL GENIO DE LO EXTRAÑO</h1>
+          <img class="banner" src="../img/img0.jpg" alt="dibujos por Tim Burton">
+          <div class="desktop-menu"> <!--Nav de la versión desktop-->
+            <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
+              <ul class="nav nav-pills">
+                <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+                <li class="nav-link"><a href="../biografia.html" target="_self">Biografía</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
+                    <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
+                    <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
+                    <li><a class="dropdown-item" href="../estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                    <li><a class="dropdown-item" href="../estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                  </ul>
+                <li class="nav-item"><a class="nav-link" href="../colaboraciones.html" target="_self">Colaboraciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="../otras-obras.html" target="_self">Otras Obras</a></li>
+                <li class="nav-item"><a class="nav-link" href="../galeria-fotos.html" target="_self">Galería de Fotos</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-menu"> <!--Nav de la versión mobile-->
+            <nav>
+              <div class="topnav">
+                <a href="animacion.html" target="_self">Animación</a>
+                <div id="myLinks">
+                  <ul class="nav nav-pills">
+                      <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+                      <li class="nav-item"><a href="../biografia.html" target="_self">Biografía</a></li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../filmografia/index.html" role="button" aria-expanded="false">Filmografía</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../filmografia/index.html">Sobre filmografía</a></li>
+                          <li><a class="dropdown-item" href="../filmografia/animacion.html">Animación</a></li>
+                          <li><a class="dropdown-item" href="../filmografia/live-action.html">Live-action</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
+                          <li><a class="dropdown-item" href="../estilos-y-tematicas/tecnica.html">Técnica</a></li>
+                          <li><a class="dropdown-item" href="../estilos-y-tematicas/tematicas.html">Temáticas</a></li>
+                        </ul>
+                      <li class="nav-item"><a class="nav-link" href="../colaboraciones.html" target="_self">Colaboraciones</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../otras-obras.html" target="_self">Otras Obras</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../galeria-fotos.html" target="_self">Galería de Fotos</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../estilos-y-tematicas/index.html" role="button" aria-expanded="false">Estilos y temáticas</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../estilos-y-tematicas/index.html">Sobre estilos y temáticas</a></li>
-                      <li><a class="dropdown-item" href="../estilos-y-tematicas/tecnica.html">Técnica</a></li>
-                      <li><a class="dropdown-item" href="../estilos-y-tematicas/tematicas.html">Temáticas</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="../colaboraciones.html" target="_self">Colaboraciones</a></li>
-                  <li class="nav-item"><a class="nav-link" href="../otras-obras.html" target="_self">Otras Obras</a></li>
-                  <li class="nav-item"><a class="nav-link" href="../galeria-fotos.html" target="_self">Galería de Fotos</a></li>
-                </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
               </div>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>    
-          </nav>
-        </div>
-      </header>
+            </nav>
+          </div>
+        </header>
+
+
       <section class="textoSection">
-        <section>
-          <h2 class="titulos">ESTILOS Y TEMÁTICAS DE BURTON: Temáticas</h2>
-          <p class="textoCentrado">El cine de Tim Burton reúne lo desconocido con una mezcla de fantasía y realidad con elementos irreales, imaginarios y sobrenaturales mediante una estética gótica y en muchas ocasiones, siniestra. Algo que llama la atención del cineasta es que siempre intenta transmitir emociones con la estética; esto podría ocurrir por sus orígenes en el campo de la animación, ya que este género cuenta las historias apoyándose más en las imágenes que en la narración, lo que justifica la sencillez narrativa y la base de las tramas en los personajes y sus objetivos. Siente debilidad por historias tristes o poco usuales, y la temática debe acompañar a esta estética para tenga un sentido y contenga todo el significado posible.</p>
-        </section>
-        <main>
-          <h3 class="titulos">TEMAS PRINCIPALES</h3>
-          <p class="textoBurton">
-            <ul>
-              <li>La figura del hombre contra el mundo: el protagonista de Eduardo Manostijeras es una criatura al que la sociedad no entiende y le rechaza, teniendo que enfrentarse solo a los conflictos.</li>
-              <li>Los mundos fantásticos: Burton suele ofrecernos una conexión entre dos mundos que pueden ser de muchos tipos. En la película animada Pesadilla antes de Navidad los representa mediante una oscura a la vez que tétrica visión de dos celebraciones, Halloween y Navidad, o La Novia Cadáver, donde la protagonista está condenada a rondar eternamente entre los vivos y los muertos sin destino fijo.</li>
-              <li>Las dobles personalidades: este tema es palpable en Batman, donde nadie conoce la verdadera identidad de este justiciero enmascarado.</li>
-              <li>Las diferentes realidades y la imaginación: Burton es un experto en deformar la realidad, creando una nueva que será objetiva y posible dentro de la obra. Un ejemplo de ello es Big Fish, donde se nos relatan unas historias que supuestamente se ajustan a la realidad, pero que presentan un límite confuso con la fantasía.</li>
-            </ul>
-          </p>
-        </section>
-      </section>
-      <footer>
-        <p><em>Para recibir más información escribinos a:<a href="mailto:burtoniana_1998@yahoo.com"> burtoniana_1998@yahoo.com</a></em></p>
-      </footer>
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
-      <script src="../js/script-compartido.js"></script>
-    </div>
-  </body>
+
+        <h2 class="titulos">LA ANIMACIÓN DE BURTON: el stop-motion</h2>
+        <p class="textoCentrado">La estética de Burton alcanza su máxima expresión en las películas de animación, ya que este género le ofrece la posibilidad de dar rienda suelta a sus pensamientos y experimentar
+        con la realidad gracias a la mayor libertad creativa que le permite el medio y a un control
+        absoluto de la puesta en escena.</p>
+        <img class="imgTimCaratula" src="img/img29.jpg" alt="Tim Burton y sus personajes">
+        <p class="textoBurton">Su filmografía está compuesta en gran parte por el stop-motion, técnica que el cineasta domina de una manera espectacular. El stop-motion (o animación en volumen) es una
+        técnica de animación que consiste en captar imágenes estáticas que juntas crean ilusión
+        de movimiento. Este proceso da como resultado una serie de fotogramas que puestos
+        sucesivamente crean ilusión de movimiento, convirtiendo los objetos fijos capturados en
+        animados. Los manipuladores o animadores colocan un objeto en la posición deseada en
+        un escenario tridimensional y van desplazando las figuras lentamente. Cada pequeño
+        movimiento, corresponde a un fotograma. Como se basa en una técnica fotográfica muy
+        laboriosa, en la que hay que conseguir que los movimientos entre foto y foto parezcan
+        fluidos y naturales para que sensación de realidad sea creíble, consigue un realismo del
+        que carecen otras.</p>
+        <img class="imgTimNino" src="img/img30.jpg" alt="Tim Burton y sus personajes">
+        <p class="textoBurton">Cuando aún ni siquiera se le daba un nombre a esta técnica, muchos la utilizaron en sus filmes. Hubo artistas que descubrieron que podían expresarse dotando de vida a cosas inertes y uno de los primeros fue Segundo de Chomón con El hotel eléctrico (1908), en el que los objetos se movían como si tuviesen vida propia.</p>
+        <p class="textoBurton">Con el tiempo, la técnica llegó a los grandes estudios. En 1933 nacía el temible King Kong, que en realidad no era más que una figurita de 45 centímetros. Fue creada por Willis O'Brien, quien posteriormente enseñó el mundo de la animación a su joven ayudante, Ray Harryhausen, del que Burton estaba muy influenciado, por lo que no es de extrañar que quisiera hacer este tipo de animación. Harryhausen se convertiría en uno de los mejores técnicos de animación en stop-motion de la historia, que disparó la popularidad de esta técnica con películas como Los Viajes de Gulliver o Jasón y los Argonautas, entre muchas otras.</p>
+        <img class="imgTimCaratula" src="img/img31.jpg" alt="Tim Burton y sus personajes">
+        <p class="textoBurton">Quizás uno de los mayores logros de Burton dentro de la industria haya sido su contribución en la revitalización de esta técnica, que plasmó en su primer corto, Vincent. Era un formato algo desconocido en los 80 y la técnica empleada era inusual, pero su utilización suele ser una condición imprescindible en la realización de sus películas de animación. Cuando hizo el corto Frankenweenie en 1984, Burton ya tenía en mente hacer un largometraje en stop-motion, pero el plan tuvo que retrasarse hasta 2012, año en el que por fin llegó la película Frankenweenie 3D, película de referencia en el cine de animación. Le siguen películas conocidas por todos como Pesadilla antes de Navidad, convertida ya en una película de culto, o La Novia Cadáver.</p>
+
+        <img class="imgTimNino" src="img/img32.jpg" alt="Tim Burton y sus personajes">
+        <p class="textoBurton">Es un trabajo muy laborioso que puede verse reflejado en Pesadilla antes de Navidad, donde fueron necesarias más de 400 cabezas que se sustituían fotograma a fotograma para representar las distintas expresiones de Jack, el protagonista. Hoy día existen avances que incorporan en el interior de la cabeza de los personajes un sistema de engranajes que permiten movimientos faciales de las figuras, haciendo el trabajo más ágil. Una vez hechos, las manos de los animadores son las que dotan de movimiento a los personajes, que parecen desplazarse con una extraña mezcla de pesadez y ligereza.</p>
+        <p class="textoBurton">En cuanto a los decorados, pasan de ser ideas plasmadas en papel a tener tres dimensiones, primero como maqueta y después con dimensiones definitivas. Sobre la maqueta es donde se realizan todo tipo de pruebas, desde la iluminación hasta los movimientos tanto de cámara como de los personajes.</p>
+
+
+        <h3 class="titulos">Trabajando sobre sus personajes</h3>
+
+        <div class="video-container">
+         <video class= "responsive-video" src="../video/video2.mp4" controls></video>
+        </div>
+
+      </section> 
+
+    <footer>
+      <p><em>Para recibir más información escribinos a:<a href="mailto:burtoniana_1998@yahoo.com"> burtoniana_1998@yahoo.com</a></em></p>
+    </footer>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src="../js/script-compartido.js"></script>
+    </body>
 </html>
